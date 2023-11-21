@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer JS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--=============== FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap"
+            rel="stylesheet"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--=============== JS ===============-->
     <script src="js/app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" class="timer">
+        <div class="info">
+          Установить медитацию на
+          <input type="number" name="time" aria-label="Число минут до медитации" value="10">
+          минут
+        </div>
+        <!-- /.info -->
+        <div class="countdown">
+          <div class="num" id="min_tens">0</div>
+          <!-- /.num -->
+          <div class="num" id="min">0</div>
+          <!-- /.num -->
+          <div class="dots">:</div>
+          <!-- /.dots -->
+          <div class="num" id="sec_tens">0</div>
+          <!-- /.num -->
+          <div class="num" id="sec">0</div>
+          <!-- /.num -->
+        </div>
+        <!-- /.countdown -->
+        <button type="submit" class="button">
+          Запустить таймер
+        </button>
+      </form>
+    </div>
+    <!-- /.wrapper -->
+  </body>
 </html>
